@@ -6,13 +6,18 @@ import User from './components/User';
 const fullname: string = 'Osman Bashirov'
 // const isLoggedIn: boolean = false;
 
+const user: User = {
+  name: 'Osman',
+  city: "Kocaeli",
+  age: 21
 
+}
 
 
 function App() {
   return (
     <div className="App">
-      <User name='Osman' age={21} city='Kocaeli' />
+      <User firends={['osman', 'elsen', 'memmed']} data={user} />
 
       {/* first letter always is must be Uppercase */}
       {/* {isLoggedIn ? fullname : 'Sign in'} */}

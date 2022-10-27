@@ -1,17 +1,27 @@
 import React from 'react';
 
-interface IUserProps {
-    name: string;
-    age: number;
-    city: string
+type User = {
+    name: string,
+    city: string;
+    age: number
 }
 
-const User: React.FC<IUserProps> = ({ name, age, city }) => {
+interface IUserProps {
+    name?: string;
+    age?: number;
+    city?: string
+    data: User
+    firends: string[]
+}
+
+const User: React.FC<IUserProps> = ({ data, firends }) => {
     return (
         <>
-            <div>Name: {name}</div>
-            <div>Age: {age}</div>
-            <div>City: {city}</div>
+            {
+                firends.map((friend, i) => (
+                    <div key={i}>{friend}</div>
+                ))
+            }
         </>
     )
 }
