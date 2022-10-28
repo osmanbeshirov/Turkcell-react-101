@@ -6,6 +6,8 @@ type User = {
     age: number
 }
 
+
+
 interface IUserProps {
     name?: string;
     age?: number;

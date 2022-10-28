@@ -1,4 +1,5 @@
 import React from 'react';
+import Counter from './components/Counter';
 import Header from './components/Header';
 import Login from './components/Login';
 import User from './components/User';
@@ -13,11 +14,14 @@ const user: User = {
 
 }
 
+const myFriends = ['osman', 'elsen', 'memmed']
+
 
 function App() {
   return (
     <div className="App">
-      <User firends={['osman', 'elsen', 'memmed']} data={user} />
+      <Counter />
+      {/* <User firends={myFriends} data={user} /> */}
 
       {/* first letter always is must be Uppercase */}
       {/* {isLoggedIn ? fullname : 'Sign in'} */}
