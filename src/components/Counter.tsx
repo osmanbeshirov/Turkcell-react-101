@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 const Counter = () => {
 
     const [counter, setCount] = useState<number>(0);
+    
 
     const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
         setCount(counter + 1)

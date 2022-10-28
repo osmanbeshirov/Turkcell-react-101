@@ -20,8 +20,8 @@ const myFriends = ['osman', 'elsen', 'memmed']
 function App() {
   return (
     <div className="App">
-      <Counter />
-      {/* <User firends={myFriends} data={user} /> */}
+      {/* <Counter /> */}
+      <User firends={myFriends} data={user} />
 
       {/* first letter always is must be Uppercase */}
       {/* {isLoggedIn ? fullname : 'Sign in'} */}
