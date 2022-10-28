@@ -1,4 +1,5 @@
 import React from 'react';
+import Colors from './components/Colors';
 import Counter from './components/Counter';
 import Header from './components/Header';
 import Login from './components/Login';
@@ -20,8 +21,10 @@ const myFriends = ['osman', 'elsen', 'memmed']
 function App() {
   return (
     <div className="App">
+      <Colors/>
+
       {/* <Counter /> */}
-      <User firends={myFriends} data={user} />
+      {/* <User firends={myFriends} data={user} /> */}
 
       {/* first letter always is must be Uppercase */}
       {/* {isLoggedIn ? fullname : 'Sign in'} */}
