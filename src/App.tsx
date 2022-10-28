@@ -1,6 +1,7 @@
 import React from 'react';
 import Colors from './components/Colors';
 import Counter from './components/Counter';
+import Form from './components/Form';
 import Header from './components/Header';
 import Login from './components/Login';
 import User from './components/User';
@@ -21,7 +22,8 @@ const myFriends = ['osman', 'elsen', 'memmed']
 function App() {
   return (
     <div className="App">
-      <Colors/>
+      <Form/>
+      {/* <Colors /> */}
 
       {/* <Counter /> */}
       {/* <User firends={myFriends} data={user} /> */}
