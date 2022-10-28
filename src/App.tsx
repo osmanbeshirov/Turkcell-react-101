@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Colors from './components/Colors';
 import Counter from './components/Counter';
 import Form from './components/Form';
@@ -20,12 +20,17 @@ const myFriends = ['osman', 'elsen', 'memmed']
 
 
 function App() {
+
+  const [isVisible, setIsVisible] = useState(true)
+
   return (
     <div className="App">
-      <Form/>
+      {/* <Form/> */}
       {/* <Colors /> */}
 
-      {/* <Counter /> */}
+      {isVisible && <Counter /> || null}
+      <button onClick={() => setIsVisible(!isVisible)}>Show/Hide</button>
+
       {/* <User firends={myFriends} data={user} /> */}
 
       {/* first letter always is must be Uppercase */}
